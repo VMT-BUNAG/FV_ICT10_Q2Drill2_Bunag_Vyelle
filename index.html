@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+    <title>ICT CLUB DATA BASE</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url(https://i.pinimg.com/736x/6b/1a/d0/6b1ad0e9ed79598c4543115681156987.jpg);
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .container {
+            background: linear-gradient(to bottom, #451536, #190e20);
+            width: 300px;
+            padding: 25px;
+            text-align: center;
+            border: 2px solid #d380ff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px #cb69ff;
+        }
+
+        h1 {
+            color: #ddb6ff;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            color: #c169ff;
+            font-size: 18px;
+        }
+
+        p {
+            color: #efd6ff;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ce80ff;
+            border-radius: 5px;
+            background: #281525;
+            color: white;
+        }
+
+       #result {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.55);
+            border: 1px solid rgba(208, 167, 227, 0.7);
+            border-radius: 12px;
+            color: #71318f;
+        }
+
+        button {
+            width: 98%;
+            padding: 10px;
+            margin-top: 10px;
+            background: linear-gradient(to right, #d59aff, #a02ee7);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            box-shadow: 0 0 12px #d769ff;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>ICT 10</h1>
+        <h2>CLUB DATA BASE</h2>
+        <p>Add New Members To Data Base</p>
+
+        <input type="text" id="first" placeholder="First Name">
+        <input type="text" id="last" placeholder="Last Name">
+
+        <button py-click="check_name">ADD MEMBER</button>
+        <button py-click="clear_name">SUBMIT</button>
+        <p id="output1"></p>
+    </div>
+
+    <div id="result">
+        <h2>All Members</h2>
+        <p id="message"></p>
+    </div>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+
+</html>
